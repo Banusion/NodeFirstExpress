@@ -1,0 +1,9 @@
+{
+    "env":"DEV",
+    "secret": "1mv4ever",
+    "database": "tuto",
+    "dbuser":"root",
+    "dbpass":"",
+    "dbhost":"localhost",
+    "esbEndpoint":"http://localhost:8041/services/RESTONEMV" //ddevam02
+}

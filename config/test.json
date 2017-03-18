@@ -1,0 +1,4 @@
+{
+    "esbEndpoint":"http://10.81.138.150:8041/services/RESTONEMV", //dimptst02
+    "env":"TEST"
+}

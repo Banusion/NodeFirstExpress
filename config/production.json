@@ -1,0 +1,8 @@
+{   
+    "jwtExpire":"7d",
+    "esbEndpoint":"http://10.81.138.74:8041/services/RESTONEMV",    //dom-srv-esb-01
+    "numXavier":"0614063924",
+    "mailXavier":"partenaires@homeserve.fr;guillaume.renoult@homeserve.fr",
+	"testTracking":"",
+    "env":"PROD"    
+}

@@ -1,0 +1,24 @@
+<% include ../pages/header %>
+
+<div class="container">
+	
+	<h3>Commentaire</h3>
+	
+	<div class="form-group">
+
+		<img src="https://randomuser.me/api/portraits/lego/7.jpg" alt="Lego" height="40" width="40">
+		<p>Pseudo</p>
+			
+		<div class ="well">
+			<%= message.content %>			
+			<span style="float: right; text-align: right"
+				<div class="date">
+					<%= message.created_at.fromNow() %>
+				</div>
+			</span>
+		</div>
+	</div>
+
+</div>
+
+<% include ../pages/footer %>

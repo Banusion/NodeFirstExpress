@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+
+	<link rel="stylesheet" type="text/css" href="/assets/bootstrap3/css/bootstrap.min.css">
+
+	<style>
+
+		.main.container{
+			margin-top: 7em;
+		}
+		
+	</style>
+	
+</head>
+<body>
+	<div>
+		<nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+		    <ul class="nav navbar-nav">
+		    	<li class="active"><a href="/">Livre Or<span class="sr-only">(current)</span></a></li>
+		    </ul>
+		</nav>
+	</div>
+
+	<div class="container">
+	
+		<% if (locals.flash && locals.flash.error) { %>
+	
+			<div class="alert alert-danger" role="alert">
+			
+				<%= flash.error %>
+		
+			</div>
+		
+		<% } %>
+
+		<% if (locals.flash && locals.flash.success) { %>
+	
+			<div class="alert alert-success" role="alert">
+			
+				<%= flash.success %>
+		
+			</div>
+		
+		<% } %>
+
+	</div>
