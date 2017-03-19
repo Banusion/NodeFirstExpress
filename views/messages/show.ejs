@@ -6,6 +6,8 @@
 	
 	<div class="form-group">
 
+		<% if (locals.message) { %>
+
 		<img src="https://randomuser.me/api/portraits/lego/7.jpg" alt="Lego" height="40" width="40">
 		<p>Pseudo</p>
 			
@@ -17,6 +19,11 @@
 				</div>
 			</span>
 		</div>
+		<% } else { %>
+			<div class="alert alert-danger" role="alert">
+				Pas de records trouvé
+			</div>
+		<% } %>
 	</div>
 
 </div>

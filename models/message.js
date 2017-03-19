@@ -1,17 +1,17 @@
-let connection = require('../config/db')
-
+let logger = require('../models/logger')
 let moment = require('../config/moment')
+let MongoClient = require("mongodb").MongoClient
+let autoIncrement = require("mongodb-autoincrement");
+let config     = require('config')
 
 class Message {
 
 	constructor (row) {
-		
 		this.row = row
-
 	}
 
 	get id () {
-		return this.row.id
+		return this.row.pre_mongified_id
 	}
 
 	get content () {
@@ -23,38 +23,44 @@ class Message {
 	}
 
 	static create (content, cb ) {
-
-		connection.query('INSERT INTO messages SET content = ?, created_at = ?', [content, new Date()], (err, result) => {
-
-			if (err) throw err
-
-			cb(result)	
+		MongoClient.connect(config.get('mongodb') + config.get('database'), function(error, db) {
+			if (error) return logger.info(error)
+			autoIncrement.getNextSequence(db, config.get('collection'), function (err, autoIndex) {
+				if (err) return logger.info(err)
+				let query = {"content": content, "created_at": new Date(),"pre_mongified_id": autoIndex}
+				db.collection(config.get('collection')).insert(query, function(err, row) {
+					if (err) return logger.info(err)
+					cb(row)
+				})
+			})
 		})
-
 	}
 
 	static all (cb) {
-
-		connection.query('SELECT * FROM messages', (err, rows) => {
-
-			if (err) throw err
-
-			cb(rows.map((row) => new Message(row)))	
-		})
-
+		MongoClient.connect(config.get('mongodb') + config.get('database'), function(error, db) {
+			if (error) return logger.info(error)
+			db.collection(config.get('collection')).find().toArray(function(err, rows) {
+				if (err) return logger.info(err)
+	        	cb(rows.map((row) => new Message(row)))	
+	        })
+	    })
 	}
 
 	static find (id ,cb) {
-
-		connection.query('SELECT * FROM messages WHERE messages.id = ? LIMIT 1', [id], (err, rows) => {
-
-			if (err) throw err
-
-			cb(new Message(rows[0]))	
-		})
-
+		MongoClient.connect(config.get('mongodb') + config.get('database'), function(error, db) {
+			if (error) return logger.info(error)	
+			let query = {"pre_mongified_id": Number(id)}
+			db.collection(config.get('collection')).findOne(query, function(err, rows) {
+				if (err) return logger.info(err)
+				if (rows != null) {
+        			cb(new Message(rows))
+        		} else {
+        			logger.info('no record')
+        			cb()
+        		}
+        	})	
+	    })
 	}
-
 }
 
 module.exports = Message
