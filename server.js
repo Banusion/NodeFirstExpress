@@ -6,7 +6,8 @@ let morgan     = require('morgan')
 let logger     = require('./models/logger')
 let config     = require('config')
 const mongoose      = require('mongoose'),
-	  autoIncrement = require('mongoose-auto-increment')
+	    autoIncrement = require('mongoose-auto-increment')
+let compression = require('compression')
 
 // =======================
 // configuration =========
@@ -16,6 +17,9 @@ let port = process.env.PORT || 8069
 //db connection
 mongoose.Promise = global.Promise
 autoIncrement.initialize(mongoose.connect(config.get('database')))
+
+//compression middleware
+app.use(compression())
 
 // Moteur de template
 app.set('view engine', 'ejs')
