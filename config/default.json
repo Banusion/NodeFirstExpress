@@ -1,8 +1,7 @@
 {
     "env":"DEV",
     "secret": "1mv4ever",
-    "database": "tuto",
-    "mongodb":"mongodb://127.0.0.1/",
+    "database": "mongodb://localhost:27017/tuto",
     "collection":"messages",
     "esbEndpoint":"http://localhost:8041/services/RESTONEMV" //ddevam02
 }
