@@ -59,16 +59,17 @@ app.use(session({
 }))
 
 // Passport module for autentification
+require('./config/passport')(passport)
 app.use(passport.initialize())
 app.use(passport.session()) // persistent login sessions
 
+
 //Flash message
+
 app.use(flash())
 
-app.use(require('./middlewares/flash'))
-
 // Routes
-require('./routes')(app, passport);
+require('./routes')(app, passport)
 
 app.listen(port)
 logger.info('LivreOr : http://localhost:' + port)

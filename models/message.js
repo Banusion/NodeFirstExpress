@@ -1,12 +1,12 @@
 "use strict";
 
-const mongoose      = require('mongoose')
-	  				  require('mongoose-moment')(mongoose)
-const Schema        = mongoose.Schema,
+const mongoose      = require('mongoose'),
+	  Schema        = mongoose.Schema,
  	  autoIncrement = require('mongoose-auto-increment'),
 	  logger        = require('../models/logger'),
 	  config        = require('config')
 
+require('mongoose-moment')(mongoose)
 //================================
 // Message Schema
 //================================

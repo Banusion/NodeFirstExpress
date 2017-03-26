@@ -1,0 +1,110 @@
+<% include ../header %>
+
+<div class="container">
+	<!-- show any messages that come back with authentication -->
+	<% if (alert.length > 0) { %>
+	    <div class="<%-alert[0].class%>"><%-alert[0].contenu%></div>
+	<% } %>
+</div>
+
+<div class="container">
+	<form action="/message" method="post" accept-charset="utf-8" class="form-horizontal" role="form" style="width: 90%;">
+		<div class="form-group form-group-lg">
+			<div class="col-sm-2">
+				<label for="message" class="pull-right control-label for="message"">Message</label>
+			</div>
+			<div class="col-sm-8">
+				<textarea class="form-control" rows="5" name="message" id="message" placeholder="Entrez votre message à poster içi"></textarea>
+			</div>
+	        <div class="col-sm-2">
+	        	<input id="submit" name="submit" type="submit" value="Envoyer" class="btn btn-primary btn-lg">
+			</div>
+		</div>
+	</form>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-md-offset-1">
+			<div class="panel panel-default panel-table">
+			  	<!-- Default panel contents -->
+			  	<div class="panel-heading">
+			  		<div class="row">
+	                  <div class="col col-xs-6">
+	                    <h3 class="panel-title">Commentaires : </h3>
+	                  </div>
+	                  <!-- <div class="col col-xs-6 text-right">
+	                    <button type="button" class="btn btn-sm btn-primary btn-create">Create New</button>
+	                  </div> -->
+	                </div>
+			  	</div>
+			  	<div class="panel-body">
+				  	<!-- Table -->
+				  	<table class="table table-striped">
+				  		<thead>
+				      		<tr>
+				        		<th>#</th>
+				        		<th>Link</th>
+				        		<th>Message</th>
+				        		<th>Publish Time</th>
+				      		</tr>
+				    	</thead>
+				    
+						<% for (message of messages) { %>
+							<tbody>
+								<tr>
+									<td>
+										<div class="text">
+											<a href="/message/<%= message.pre_mongified_id %>">
+												<%= message.pre_mongified_id %>
+											</a>	
+										</div>
+									</td>
+									<td>
+										<div class="text">
+											<img src="https://randomuser.me/api/portraits/lego/7.jpg" alt="Lego" height="40" width="40">
+											Pseudo
+										</div>
+									</td>
+									<td>
+										<div class="text">
+											<%= message.content %>			
+										</div>
+									</td>
+									<td>
+										<div class="metadata">
+											<div class="date">
+												<%= message.created_at.fromNow() %>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						<% } %>
+				  	</table>
+				</div>
+				<div class="panel-footer">
+                	<div class="row">
+                  		<div class="col col-xs-4">Page 1 of 5</div>
+                  		<div class="col col-xs-8">
+                    		<ul class="pagination hidden-xs pull-right">
+                      			<li><a href="#">1</a></li>
+                      			<li><a href="#">2</a></li>
+                      			<li><a href="#">3</a></li>
+                  				<li><a href="#">4</a></li>
+                      			<li><a href="#">5</a></li>
+                    		</ul>
+                    		<ul class="pagination visible-xs pull-right">
+                        		<li><a href="#">«</a></li>
+                        		<li><a href="#">»</a></li>
+                    		</ul>
+                  		</div>
+                	</div>
+              	</div>
+		  	</div>
+		</div>
+	</div>
+</div>
+
+
+<% include ../footer %>
