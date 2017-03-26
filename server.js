@@ -1,13 +1,16 @@
-let express    = require('express')
-let app        = express()
-let bodyParser = require('body-parser')
-let session    = require('express-session')
-let morgan     = require('morgan')
-let logger     = require('./models/logger')
-let config     = require('config')
+let express      = require('express')
+    app          = express(),
+    bodyParser   = require('body-parser'),
+    session      = require('express-session'),
+    morgan       = require('morgan'),
+    logger       = require('./models/logger'),
+    config       = require('config'),
+    passport     = require('passport'),
+    compression  = require('compression'),
+    flash        = require('connect-flash'),
+    cookieParser = require('cookie-parser')
 const mongoose      = require('mongoose'),
 	    autoIncrement = require('mongoose-auto-increment')
-let compression = require('compression')
 
 // =======================
 // configuration =========
@@ -39,6 +42,9 @@ app.use(morgan('combined', {
 //css semantic
 app.use('/assets', express.static('public'))
 
+// parse cookie
+app.use(cookieParser())
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
@@ -52,10 +58,17 @@ app.use(session({
   cookie: { secure: false }
 }))
 
+// Passport module for autentification
+app.use(passport.initialize())
+app.use(passport.session()) // persistent login sessions
+
+//Flash message
+app.use(flash())
+
 app.use(require('./middlewares/flash'))
 
 // Routes
-require('./routes')(app);
+require('./routes')(app, passport);
 
 app.listen(port)
 logger.info('LivreOr : http://localhost:' + port)

@@ -707,3 +707,173 @@
 
 [2017-03-26 00:15:59.084] [INFO] livreor - ::ffff:127.0.0.1 - - [25/Mar/2017:23:15:59 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
 
+[2017-03-26 00:32:46.225] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 00:32:46.229] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 00:33:01.269] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:01 +0000] "GET / HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:01.279] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:01 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:15.237] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:15 +0000] "POST / HTTP/1.1" 302 46 "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:15.262] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:15 +0000] "GET / HTTP/1.1" 200 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:15.271] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:15 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:18.047] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:18 +0000] "GET /message/1 HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:18.056] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:18 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:24.856] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:24 +0000] "GET /message/9 HTTP/1.1" 200 907 "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 00:33:24.867] [INFO] livreor - ::1 - - [25/Mar/2017:23:33:24 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/9" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:09:16.640] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Mar/2017:13:09:16 +0000] "GET / HTTP/1.1" 200 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:09:16.679] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Mar/2017:13:09:16 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:29:49.332] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:29:49.335] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:30:04.313] [INFO] livreor - ::1 - - [26/Mar/2017:13:30:04 +0000] "GET / HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:30:04.329] [INFO] livreor - ::1 - - [26/Mar/2017:13:30:04 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:30:08.625] [INFO] livreor - ::1 - - [26/Mar/2017:13:30:08 +0000] "GET /message/3 HTTP/1.1" 200 912 "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:30:08.633] [INFO] livreor - ::1 - - [26/Mar/2017:13:30:08 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/3" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:44:18.683] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:44:18.687] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:44:37.689] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:44:37.695] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:44:56.807] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:44:56.811] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:45:59.133] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:45:59.137] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:46:01.830] [INFO] livreor - ::1 - - [26/Mar/2017:13:46:01 +0000] "GET / HTTP/1.1" 404 131 "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:46:14.159] [INFO] livreor - ::1 - - [26/Mar/2017:13:46:14 +0000] "GET /message HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:46:14.174] [INFO] livreor - ::1 - - [26/Mar/2017:13:46:14 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:46:17.135] [INFO] livreor - ::1 - - [26/Mar/2017:13:46:17 +0000] "GET /message/1 HTTP/1.1" 200 914 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:46:17.144] [INFO] livreor - ::1 - - [26/Mar/2017:13:46:17 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:47:08.063] [INFO] livreor - ::1 - - [26/Mar/2017:13:47:08 +0000] "GET /message/1 HTTP/1.1" 200 1013 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:47:08.073] [INFO] livreor - ::1 - - [26/Mar/2017:13:47:08 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:47:10.112] [INFO] livreor - ::1 - - [26/Mar/2017:13:47:10 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:47:10.121] [INFO] livreor - ::1 - - [26/Mar/2017:13:47:10 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:47:11.149] [INFO] livreor - ::1 - - [26/Mar/2017:13:47:11 +0000] "GET / HTTP/1.1" 404 131 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:48:41.116] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:48:41.120] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:52:36.734] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-03-26 15:52:36.739] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-03-26 15:53:08.005] [INFO] livreor - ::1 - - [26/Mar/2017:13:53:08 +0000] "GET /message HTTP/1.1" 500 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:27.264] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:27 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:27.276] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:27 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:29.231] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:29 +0000] "GET /message HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:29.241] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:29 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:31.127] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:31 +0000] "GET /message/1 HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:31.140] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:31 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:33.212] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:33 +0000] "GET / HTTP/1.1" 404 131 "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:36.455] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:36 +0000] "GET /message HTTP/1.1" 304 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:36.464] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:36 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:54:40.833] [INFO] livreor - ::1 - - [26/Mar/2017:13:54:40 +0000] "POST / HTTP/1.1" 404 132 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:56:12.776] [INFO] livreor - ::1 - - [26/Mar/2017:13:56:12 +0000] "GET /message HTTP/1.1" 304 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:56:12.786] [INFO] livreor - ::1 - - [26/Mar/2017:13:56:12 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:56:25.470] [INFO] livreor - ::1 - - [26/Mar/2017:13:56:25 +0000] "POST / HTTP/1.1" 404 132 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:58:16.376] [INFO] livreor - ::1 - - [26/Mar/2017:13:58:16 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:58:16.617] [INFO] livreor - ::1 - - [26/Mar/2017:13:58:16 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:28.034] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:28 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message/1" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:28.043] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:28 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:28.200] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:28 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:32.623] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:32 +0000] "POST /message HTTP/1.1" 302 60 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:32.631] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:32 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:32.640] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:32 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:32.786] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:32 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:39.170] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:39 +0000] "GET /message/11 HTTP/1.1" 200 1005 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:39.185] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:39 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message/11" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:39.322] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:39 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:41.758] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:41 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:45.471] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:45 +0000] "POST /message HTTP/1.1" 302 60 "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:45.481] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:45 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:45.492] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:45 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 15:59:45.627] [INFO] livreor - ::1 - - [26/Mar/2017:13:59:45 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:00:45.481] [INFO] livreor - ::1 - - [26/Mar/2017:14:00:45 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:00:47.761] [INFO] livreor - ::1 - - [26/Mar/2017:14:00:47 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:00:47.771] [INFO] livreor - ::1 - - [26/Mar/2017:14:00:47 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:00:47.902] [INFO] livreor - ::1 - - [26/Mar/2017:14:00:47 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:01:19.451] [INFO] livreor - ::1 - - [26/Mar/2017:14:01:19 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:01:19.464] [INFO] livreor - ::1 - - [26/Mar/2017:14:01:19 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:01:24.653] [INFO] livreor - ::1 - - [26/Mar/2017:14:01:24 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:01:24.905] [INFO] livreor - ::1 - - [26/Mar/2017:14:01:24 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:02:50.030] [INFO] livreor - ::1 - - [26/Mar/2017:14:02:50 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:02:50.041] [INFO] livreor - ::1 - - [26/Mar/2017:14:02:50 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:02:50.200] [INFO] livreor - ::1 - - [26/Mar/2017:14:02:50 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:03:30.769] [INFO] livreor - ::1 - - [26/Mar/2017:14:03:30 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:03:30.777] [INFO] livreor - ::1 - - [26/Mar/2017:14:03:30 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:04:01.694] [INFO] livreor - ::1 - - [26/Mar/2017:14:04:01 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:04:01.704] [INFO] livreor - ::1 - - [26/Mar/2017:14:04:01 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:04:50.251] [INFO] livreor - ::1 - - [26/Mar/2017:14:04:50 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:04:50.259] [INFO] livreor - ::1 - - [26/Mar/2017:14:04:50 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:05:02.717] [INFO] livreor - ::1 - - [26/Mar/2017:14:05:02 +0000] "GET /message HTTP/1.1" 200 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:05:02.726] [INFO] livreor - ::1 - - [26/Mar/2017:14:05:02 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:05:08.236] [INFO] livreor - ::1 - - [26/Mar/2017:14:05:08 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/message" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
+[2017-03-26 16:05:08.493] [INFO] livreor - ::1 - - [26/Mar/2017:14:05:08 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css.map HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36"
+
