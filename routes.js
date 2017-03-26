@@ -20,7 +20,11 @@ module.exports = function(app, passport) {
     })
 
     // process the login form
-    // app.post('/login', do all our passport stuff here);
+    app.post('/login', passport.authenticate('local-login', {
+        successRedirect : '/profile', // redirect to the secure profile section
+        failureRedirect : '/login', // redirect back to the signup page if there is an error
+        failureFlash : true // allow flash messages
+    }))
 
     // =====================================
     // SIGNUP ==============================
@@ -44,7 +48,7 @@ module.exports = function(app, passport) {
     // we will want this protected so you have to be logged in to visit
     // we will use route middleware to verify this (the isLoggedIn function)
     app.get('/profile', isLoggedIn, function(req, res) {
-        res.render('profile.ejs', {
+        res.render('login/profile.ejs', {
             user : req.user // get the user out of session and pass to template
         })
     })
@@ -60,7 +64,7 @@ module.exports = function(app, passport) {
     // =====================================
     // DISPLAY MESSAGES ====================
     // =====================================
-	app.get('/message', (req, res) => {
+	app.get('/message', isLoggedIn, (req, res) => {
 		MessageController.all(function(messages) {
 			res.render('message/messages', {messages: messages, alert: req.flash('alert')})
 		})
@@ -69,7 +73,7 @@ module.exports = function(app, passport) {
 	// =====================================
     // DISPLAY ONE MESSAGE =================
     // =====================================
-	app.get('/message/:id', (req, res) => {
+	app.get('/message/:id', isLoggedIn, (req, res) => {
 		MessageController.find(req.params.id, function(message) {
 			res.render('message/messagedetail', {message: message})
 		})
@@ -79,7 +83,7 @@ module.exports = function(app, passport) {
     // POST MESSAGE ========================
     // =====================================
 
-	app.post('/message', (req, res) => {
+	app.post('/message', isLoggedIn, (req, res) => {
 		if (req.body.message === undefined || req.body.message === '') {
 			req.flash('alert', {class:"alert alert-danger", contenu:"Vous n'avez pas posté de message"})
 			res.redirect('/message')
