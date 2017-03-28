@@ -3,16 +3,26 @@
 <head>
 	<title>Test NodeJs</title>
 	<link rel="stylesheet" type="text/css" href="/assets/bootstrap3/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/assets/fontawesome/css/font-awesome.min.css"> <!-- load fontawesome -->
+    <link rel="stylesheet" type="text/css" href="/assets/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
 	
 </head>
 <body>
-	<div>
-		<nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-		    <ul class="nav navbar-nav">
-		    	<li class="active"><a href="/">Acceuil<span class="sr-only">(current)</span></a></li>
-		    	<li class="active"><a href="/message">Message<span class="sr-only">(current)</span></a></li>
-		    </ul>
-		</nav>
-	</div>
+	<nav class="navbar navbar-inverse" role="navigation">
+		<div class="container-fluid">
+			<!-- Collect the nav links, forms, and other content for toggling -->
+   			 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			    <ul class="nav navbar-nav">
+			    	<li class="active"><a href="/">Acceuil<span class="sr-only">(current)</span></a></li>
+			    	<li class="active"><a href="/message">Message<span class="sr-only">(current)</span></a></li>
+			    </ul>
+				
+			    <% if (user) { %> 
+		            <ul class="nav navbar-nav navbar-right">    
+		                <li class="active"><a href="/profile">Bonjour : <% if (user.local.pseudo === undefined) { %> <%= user.local.email %> <% } else { %> <%= user.local.pseudo %> <% } %> </a></li>
+		                <li class="active"><a href="/logout">Logout</a></li>
+		            </ul>
+		        <% } %>
+			</div>    
+		</div>
+	</nav>

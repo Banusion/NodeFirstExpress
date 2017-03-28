@@ -40,8 +40,11 @@ exports.find = function(req, res, next) {
 // Post One Message Route
 //========================================
 exports.create = function(req, res, next) {
+    console.log(req.username)
+    console.log(req.content)    
     let newMessage = new Message({
-    	content: req,
+        username: req.username,
+    	content: req.content
     })
     newMessage.save(function(err) {
   		if (err) {

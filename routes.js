@@ -1,5 +1,5 @@
 const MessageController = require('./controllers/message'),
-      Message = require('./models/message')
+      UserController    = require('./controllers/user')
 
 module.exports = function(app, passport) {
 
@@ -7,7 +7,7 @@ module.exports = function(app, passport) {
     // HOME PAGE (with login links) ========
     // =====================================
     app.get('/', (req, res) => {
-        res.render('index.ejs') // load the index.ejs file
+        res.render('index.ejs', {user: req.user}) // load the index.ejs file
     })
 
     // =====================================
@@ -16,7 +16,7 @@ module.exports = function(app, passport) {
     // show the login form
     app.get('/login', (req, res) => {
         // render the page and pass in any flash data if it exists
-        res.render('login/login.ejs', { message: req.flash('loginMessage') })
+        res.render('login/login.ejs', {user: req.user, message: req.flash('loginMessage') })
     })
 
     // process the login form
@@ -32,15 +32,15 @@ module.exports = function(app, passport) {
     // show the signup form
     app.get('/signup', function(req, res) {
         // render the page and pass in any flash data if it exists
-        res.render('login/signup.ejs', { message: req.flash('signupMessage') });
-    });
+        res.render('login/signup.ejs', {user: req.user, message: req.flash('signupMessage') });
+    })
 
     // process the signup form
     app.post('/signup', passport.authenticate('local-signup', {
         successRedirect : '/profile', // redirect to the secure profile section
         failureRedirect : '/signup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
-    }));
+    }))
 
     // =====================================
     // PROFILE SECTION =====================
@@ -50,6 +50,14 @@ module.exports = function(app, passport) {
     app.get('/profile', isLoggedIn, function(req, res) {
         res.render('login/profile.ejs', {
             user : req.user // get the user out of session and pass to template
+        })
+    })
+
+     // process the login form
+    app.post('/profile', isLoggedIn, (req, res) => {
+        UserController.update({ pseudo: req.body.pseudo, email: req.body.email }, function() {
+            req.flash('alert', {class:"alert alert-success", contenu:"Pseudo changé"})
+            res.redirect('/profile')
         })
     })
 
@@ -66,7 +74,7 @@ module.exports = function(app, passport) {
     // =====================================
 	app.get('/message', isLoggedIn, (req, res) => {
 		MessageController.all(function(messages) {
-			res.render('message/messages', {messages: messages, alert: req.flash('alert')})
+			res.render('message/messages', {user: req.user, messages: messages, alert: req.flash('alert')})
 		})
 	})
 	
@@ -75,7 +83,7 @@ module.exports = function(app, passport) {
     // =====================================
 	app.get('/message/:id', isLoggedIn, (req, res) => {
 		MessageController.find(req.params.id, function(message) {
-			res.render('message/messagedetail', {message: message})
+			res.render('message/messagedetail', {user: req.user, message: message})
 		})
 	})
 
@@ -88,7 +96,10 @@ module.exports = function(app, passport) {
 			req.flash('alert', {class:"alert alert-danger", contenu:"Vous n'avez pas posté de message"})
 			res.redirect('/message')
 		} else {
-			MessageController.create(req.body.message, function () {
+            let username
+            if (req.user.local.pseudo === undefined) { username = req.user.local.email} else { username = req.user.local.pseudo}
+                console.log(username)
+			MessageController.create({username : username, content : req.body.message}, function () {
 			req.flash('alert', [{class:"alert alert-success", contenu:"Merci !"}])
 			res.redirect('/message')
 			})

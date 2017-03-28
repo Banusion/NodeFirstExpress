@@ -20,9 +20,12 @@ const MessageSchema = new Schema({
     created_at: {
         type: 'Moment',
         default: new Date()
+    },
+    username: {
+        type: String
     }
 }, {
-    timestamps: true
+    timestamps: false
 })
 
 MessageSchema.plugin(autoIncrement.plugin, { model: 'Message', field: 'pre_mongified_id' })
