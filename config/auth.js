@@ -17,5 +17,4 @@ module.exports = {
         'clientSecret': 'your-client-secret-here',
         'callbackURL': 'http://localhost:8069/auth/google/callback'
     }
-
 }
