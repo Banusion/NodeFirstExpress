@@ -13054,3 +13054,27 @@
 
 [2017-06-24 12:05:19.189] [INFO] livreor - ::ffff:127.0.0.1 - - [24/Jun/2017:10:05:19 +0000] "GET /assets/css/style.css HTTP/1.1" 304 - "http://127.0.0.1:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
 
+[2017-06-25 15:50:30.203] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-06-25 15:50:30.207] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-06-25 15:58:46.955] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-06-25 15:58:46.957] [INFO] livreor - LOADED CONFIG ==>  PROD
+[2017-06-25 15:59:30.648] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-06-25 15:59:30.650] [INFO] livreor - LOADED CONFIG ==>  PROD
+[2017-06-26 13:37:15.866] [INFO] livreor - LivreOr : http://localhost:8069
+[2017-06-26 13:37:15.873] [INFO] livreor - LOADED CONFIG ==>  DEV
+[2017-06-26 13:37:29.698] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:29 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:37:29.709] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:29 +0000] "GET /assets/bootstrap3/css/bootstrap.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:37:29.710] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:29 +0000] "GET /assets/css/style.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:37:29.711] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:29 +0000] "GET /assets/fontawesome/css/font-awesome.min.css HTTP/1.1" 304 - "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:37:29.856] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:29 +0000] "GET /assets/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 304 - "http://localhost:8069/assets/fontawesome/css/font-awesome.min.css" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:37:30.331] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:30 +0000] "GET /favicon.ico HTTP/1.1" 404 142 "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:37:38.936] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:37:38 +0000] "GET /auth/google HTTP/1.1" 302 0 "http://localhost:8069/" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
+[2017-06-26 13:38:46.732] [INFO] livreor - ::ffff:127.0.0.1 - - [26/Jun/2017:11:38:46 +0000] "GET /auth/google/callback?code=4/AMZ-vibSV6_JQ82UwUJm4KKBTnJQ4G-ibKgDurF9Tjw HTTP/1.1" 302 60 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36"
+
