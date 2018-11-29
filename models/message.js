@@ -4,9 +4,9 @@ const mongoose      = require('mongoose'),
 	  Schema        = mongoose.Schema,
  	  autoIncrement = require('mongoose-auto-increment'),
 	  logger        = require('../models/logger'),
-	  config        = require('config')
+	  config        = require('config');
 
-require('mongoose-moment')(mongoose)
+require('mongoose-moment')(mongoose);
 //================================
 // Message Schema
 //================================
@@ -26,8 +26,8 @@ const MessageSchema = new Schema({
     }
 }, {
     timestamps: false
-})
+});
 
-MessageSchema.plugin(autoIncrement.plugin, { model: 'Message', field: 'pre_mongified_id' })
+MessageSchema.plugin(autoIncrement.plugin, { model: 'Message', field: 'pre_mongified_id' });
 
 module.exports = mongoose.model('Message', MessageSchema);

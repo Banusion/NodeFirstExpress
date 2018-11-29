@@ -1,5 +1,5 @@
-"use strict"
-let User = require('../models/user')
+"use strict";
+let User = require('../models/user');
 
 exports.update = function(req, res) {
 	User.findOneAndUpdate(
@@ -16,7 +16,7 @@ exports.update = function(req, res) {
         if (err) {
             return console.log(err)
         }
-        console.log(user)
+        console.log(user);
         return res(user)
     })
-}
+};

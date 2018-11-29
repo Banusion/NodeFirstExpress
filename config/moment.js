@@ -1,4 +1,4 @@
-let moment = require('moment')
+let moment = require('moment');
 
 moment.locale('fr', {
     months : 'janvier_février_mars_avril_mai_juin_juillet_août_septembre_octobre_novembre_décembre'.split('_'),
@@ -61,6 +61,6 @@ moment.locale('fr', {
     }
 });
 
-moment.locale('fr')
+moment.locale('fr');
 
-module.exports = moment
+module.exports = moment;

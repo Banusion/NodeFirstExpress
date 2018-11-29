@@ -1,5 +1,5 @@
-"use strict"
-const Message = require('../models/message')
+"use strict";
+const Message = require('../models/message');
 
 //========================================
 // GET All Message Route
@@ -16,7 +16,7 @@ exports.all = function(res) {
         	return res()
         }
     })
-}
+};
 
 //========================================
 // GET One Message Route
@@ -34,18 +34,18 @@ exports.find = function(req, res, next) {
             return res()
         }
     })
-}
+};
 
 //========================================
 // Post One Message Route
 //========================================
 exports.create = function(req, res, next) {
-    console.log(req.username)
-    console.log(req.content)    
+    console.log(req.username);
+    console.log(req.content);
     let newMessage = new Message({
         username: req.username,
     	content: req.content
-    })
+    });
     newMessage.save(function(err) {
   		if (err) {
 			return res()
@@ -53,4 +53,4 @@ exports.create = function(req, res, next) {
 			return res()
 		}	
 	})
-}
+};

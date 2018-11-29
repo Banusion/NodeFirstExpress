@@ -1,5 +1,5 @@
 const MessageController = require('./controllers/message'),
-      UserController    = require('./controllers/user')
+      UserController    = require('./controllers/user');
 
 module.exports = function(app, passport) {
 
@@ -8,7 +8,7 @@ module.exports = function(app, passport) {
     // =====================================
     app.get('/', (req, res) => {
         res.render('index.ejs', {user: req.user}) // load the index.ejs file
-    })
+    });
 
     // =====================================
     // LOGIN ===============================
@@ -17,14 +17,14 @@ module.exports = function(app, passport) {
     app.get('/login', (req, res) => {
         // render the page and pass in any flash data if it exists
         res.render('login/login.ejs', {user: req.user, message: req.flash('loginMessage') })
-    })
+    });
 
     // process the login form
     app.post('/login', passport.authenticate('local-login', {
         successRedirect : '/profile', // redirect to the secure profile section
         failureRedirect : '/login', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
-    }))
+    }));
 
     // =====================================
     // SIGNUP ==============================
@@ -33,14 +33,14 @@ module.exports = function(app, passport) {
     app.get('/signup', function(req, res) {
         // render the page and pass in any flash data if it exists
         res.render('login/signup.ejs', {user: req.user, message: req.flash('signupMessage') });
-    })
+    });
 
     // process the signup form
     app.post('/signup', passport.authenticate('local-signup', {
         successRedirect : '/profile', // redirect to the secure profile section
         failureRedirect : '/signup', // redirect back to the signup page if there is an error
         failureFlash : true // allow flash messages
-    }))
+    }));
 
     // =====================================
     // PROFILE SECTION =====================
@@ -51,28 +51,28 @@ module.exports = function(app, passport) {
         res.render('login/profile.ejs', {
             user : req.user // get the user out of session and pass to template
         })
-    })
+    });
 
      // process the login form
     app.post('/profile', isLoggedIn, (req, res) => {
         UserController.update({ pseudo: req.body.pseudo, email: req.body.email }, function() {
-            req.flash('alert', {class:"alert alert-success", contenu:"Pseudo changé"})
+            req.flash('alert', {class:"alert alert-success", contenu:"Pseudo changé"});
             res.redirect('/profile')
         })
-    })
+    });
 
     // =====================================
     // FACEBOOK ROUTES =====================
     // =====================================
     // route for facebook authentication and login
-    app.get('/auth/facebook', passport.authenticate('facebook', {scope: 'public_profile,email'}))
+    app.get('/auth/facebook', passport.authenticate('facebook', {scope: 'public_profile,email'}));
 
     // handle the callback after facebook has authenticated the user
     app.get('/auth/facebook/callback', passport.authenticate('facebook', {
             successRedirect: '/profile',
             failureRedirect: '/'
         })
-    )
+    );
 
     // =====================================
     // GOOGLE ROUTES =======================
@@ -80,22 +80,22 @@ module.exports = function(app, passport) {
     // send to google to do the authentication
     // profile gets us their basic information including their name
     // email gets their emails
-    app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email'] }))
+    app.get('/auth/google', passport.authenticate('google', { scope : ['profile', 'email', 'https://www.googleapis.com/auth/admin.directory.group'] }));
 
     // the callback after google has authenticated the user
     app.get('/auth/google/callback', passport.authenticate('google', {
             successRedirect : '/profile',
             failureRedirect : '/'
         })
-    )
+    );
 
     // =====================================
     // LOGOUT ==============================
     // =====================================
     app.get('/logout', function(req, res) {
-        req.logout()
+        req.logout();
         res.redirect('/')
-    })
+    });
 
     // =====================================
     // DISPLAY MESSAGES ====================
@@ -104,7 +104,7 @@ module.exports = function(app, passport) {
 		MessageController.all(function(messages) {
 			res.render('message/messages', {user: req.user, messages: messages, alert: req.flash('alert')})
 		})
-	})
+	});
 	
 	// =====================================
     // DISPLAY ONE MESSAGE =================
@@ -113,7 +113,7 @@ module.exports = function(app, passport) {
 		MessageController.find(req.params.id, function(message) {
 			res.render('message/messagedetail', {user: req.user, message: message})
 		})
-	})
+	});
 
 	// =====================================
     // POST MESSAGE ========================
@@ -121,19 +121,31 @@ module.exports = function(app, passport) {
 
 	app.post('/message', isLoggedIn, (req, res) => {
 		if (req.body.message === undefined || req.body.message === '') {
-			req.flash('alert', {class:"alert alert-danger", contenu:"Vous n'avez pas posté de message"})
+			req.flash('alert', {class:"alert alert-danger", contenu:"Vous n'avez pas posté de message"});
 			res.redirect('/message')
 		} else {
-            let username
+            let username;
             if (req.user.local.pseudo === undefined) { username = req.user.local.email} else { username = req.user.local.pseudo}
-                console.log(username)
+                console.log(username);
 			MessageController.create({username : username, content : req.body.message}, function () {
-			req.flash('alert', [{class:"alert alert-success", contenu:"Merci !"}])
+			req.flash('alert', [{class:"alert alert-success", contenu:"Merci !"}]);
 			res.redirect('/message')
 			})
 		}
-	})
-}
+	});
+    // =====================================
+    // DISPLAY Download page =================
+    // =====================================
+    app.get('/dl', function(req, res) {
+        // render the page and pass in any flash data if it exists
+        res.render('login/download.ejs', {user: req.user});
+    });
+
+    app.get('/download', function(req, res){
+        var file = __dirname + '/public/download/HomeServePartners.ipa';
+        res.download(file); // Set disposition and send it.
+    });
+};
 
 // route middleware to make sure a user is logged in
 function isLoggedIn(req, res, next) {

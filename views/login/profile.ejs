@@ -16,7 +16,7 @@
                     <p><strong>
                         <label>Compte : </label>
                         <input type="text" class="form-control" name="email" id="email" value="<%= user.local.email %>" readonly=true>
-                    </p></strong>
+                    </strong></p>
                 </div>
             </div>
             <div class="col-sm-6">
@@ -27,7 +27,16 @@
                         <input type="text" class="form-control" name="pseudo" id="pseudo" value="<%= user.local.pseudo %>">
                     </div>
                 </div>
-            </div>    
+            </div>
+            <div class="col-sm-12">
+                <div class="well">
+                    <h3><span class="fa fa-user"></span> Detail Account</h3>
+                    <p><strong>
+                        <label>Compte : </label>
+                        <a href="/profile" class="btn btn-default"><span class="fa fa-user"></span> Profile Login</a>
+                    </strong></p>
+                </div>
+            </div>
         </div>
         <button type="submit" class="btn btn-primary btn-lg btn-block">Save</button>
     </form>

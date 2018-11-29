@@ -1,4 +1,4 @@
-let log4js = require('log4js')
+let log4js = require('log4js');
 log4js.configure({
     appenders: [{
         type: 'console'
@@ -10,8 +10,8 @@ log4js.configure({
     	backups: 20,
     }],
     replaceConsole: true
-})
+});
 
-let logger = log4js.getLogger('livreor')
+let logger = log4js.getLogger('livreor');
 
-module.exports = logger
+module.exports = logger;

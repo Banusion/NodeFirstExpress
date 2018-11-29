@@ -1,18 +1,17 @@
 FROM node:latest
 
+# Maintainer
+MAINTAINER Manuel DUQUESNOY <manuel.duquesnoy@free.fr>
+
 # Create app directory
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
+WORKDIR /usr/app
 
 # Install app dependencies
-COPY package.json /usr/src/app/
+COPY package.json /usr/app/
 RUN npm install
 
-# Bundle app source
-COPY . /usr/src/app
-
-# Port expose
+#Expose on port 8069
 EXPOSE 8069
 
-# Run baby run
-CMD [ "npm", "start" ]
+#RUN the app
+CMD [ "node", "server.js" ]

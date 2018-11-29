@@ -6,8 +6,8 @@ module.exports = {
         'callbackURL': 'http://localhost:8069/auth/facebook/callback'
     },
     'googleAuth': {
-        'clientID': '994428787075-cfbtcsb6bheujg6r7uf5elikgeopvcb0.apps.googleusercontent.com',
-        'clientSecret': 'RahDjSg7lUb3PFnIBWrFRpFH',
+        'clientID': '381737901220-cspihre4cphh01v60kbps8h64e13gkhc.apps.googleusercontent.com',
+        'clientSecret': 'AjGnnVJQSat4uEeejfp_0Kt-',
         'callbackURL': 'http://127.0.0.1:8069/auth/google/callback'
     }
-}
+};
